@@ -15,7 +15,7 @@ def register():
             db[data["username"]] = data
             file.write(json.dumps(db))
         return data
-    return render_template("registration.html")
+    return render_template("register.html")
 
 @app.route('/login', methods=["GET","POST"])
 def login():
